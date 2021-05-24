@@ -1,0 +1,73 @@
+<html>
+	<head>
+		<title>汉堡汉堡</title>
+		<meta charset="utf-8">
+		<link rel="stylesheet" href="./init/baga_style.css">
+	</head>
+	<body>
+		<div id="sidebar">
+			<div class="navbar-expand-md navbar-dark"> 
+				<header class="d-none d-md-block">
+					<h1>汉堡汉堡</h1>
+				</header>
+				<div id="SidebarContent" class="collapse flex-column navbar-collapse">
+					<nav class="navbar navbar-dark">
+						<div id="mainNavbar">
+							<ul id="kae" class="flex-column mr-auto">
+								<li class="nav-item active" ><a class="nav-link" href="./game/homepage.html" target="iframe1">主页</a></li>
+								<li class="nav-item dropdown">
+								<a class="nav-link dropdown-toggle collapsed" href="#gametext" data-toggle="collapse" aria-controls="gametext" aria-expanded="false">游戏文本</a>
+									<ul id="gametext" class="sub-navbar flex-column collapse" style="">
+										<li class="nav-item"><a class="nav-link" href="./game/setsume.html" target="iframe1">说明</a></li>
+										<li class="nav-item"><a class="nav-link" href="./game/jiken.html" target="iframe1">事件</a></li>
+										<li class="nav-item"><a class="nav-link" href="./game/hyoka.html" target="iframe1">评价</a></li>
+									</ul>
+								</li>	
+								<li id="month" class="nav-item" >
+									<a class="nav-link" href="./npc/npc.html" target="iframe1">雇员资料</a>
+								</li>
+								<li class="nav-item dropdown">
+									<a class="nav-link dropdown-toggle collapsed" href="#kitchen" data-toggle="collapse" aria-controls="kitchen" aria-expanded="false">汉堡制作</a>
+									<ul id="kitchen" class="sub-navbar flex-column collapse" style="">
+										<li class="nav-item"><a class="nav-link" href="./kitchen/tiaowei.html" target="iframe1">调味料</a></li>
+										<li class="nav-item"><a class="nav-link" href="./kitchen/sosu.html" target="iframe1">酱料</a></li>
+										<li class="nav-item dropdown">
+										<a class="nav-link dropdown-toggle collapsed" href="#mono" data-toggle="collapse" aria-controls="mono" aria-expanded="false">馅料</a>
+											<ul id="mono" class="sub-navbar flex-column collapse" style="">
+												<li class="nav-item"><a class="nav-link" href="./kitchen/mono/beef.html" target="iframe1">牛肉</a></li>
+												<li class="nav-item"><a class="nav-link" href="./kitchen/mono/chiki.html" target="iframe1">鸡肉</a></li>
+												<li class="nav-item"><a class="nav-link" href="./kitchen/mono/pork.html" target="iframe1">猪肉</a></li>
+												<li class="nav-item"><a class="nav-link" href="./kitchen/mono/fish.html" target="iframe1">鱼肉</a></li>
+												<li class="nav-item"><a class="nav-link" href="./kitchen/mono/yasai.html" target="iframe1">蔬菜</a></li>
+												<li class="nav-item"><a class="nav-link" href="./kitchen/mono/other.html" target="iframe1">其他</a></li>
+											</ul>
+										</li>	
+										<li class="nav-item"><a class="nav-link" href="./kitchen/way.html" target="iframe1">烹饪方法</a></li>
+									</ul>
+                                </li>
+								<li class="nav-item" ><a class="nav-link" href="../index.html">返回Wiki</a></li>
+                            </ul>
+                        </div>   
+                    </nav>
+                </div>
+            </div> 
+        </div>
+        <div id="content">
+			<div id="content-wrapper">
+				<iframe name="iframe1" id="iframe1" src="./game/homepage.html" width="100%" height="100%" frameborder="0"></iframe>
+			</div>
+        </div>
+		<!-- list important com -->
+		<script src="./init/jquery.min.js"></script>
+		<script src="./init/baga_popper.min.js"></script>
+		<script src="./init/baga_bootstrap.min.js"></script>
+		<!-- listmove important com -->
+		<script>
+			$("#kae>li").click(function(){
+				var index = $(this).index();
+				$(this).addClass("nav-item active").siblings().removeClass("nav-item active");
+				$(".redpacket-con").eq(index).show().siblings(".redpacket-con").hide();	
+			});
+		</script>
+	</body>
+</html>
