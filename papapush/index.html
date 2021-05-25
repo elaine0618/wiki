@@ -1,0 +1,31 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>趴趴丢丢乐</title>
+		<meta charset="utf-8">
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1">
+		<script type="text/javascript" src="./js/papapush.js"></script>
+		<style>
+			* { -webkit-tap-highlight-color:rgba(0,0,0,0); }
+			body {
+				padding: 0px;
+				margin: 0px;
+				background-image: url("./images/bg.jpg");
+				background-size:cover;
+			}
+			#canvas {
+				display: block;
+				margin: 0 auto;
+			}
+		</style>
+	</head>
+	<body>
+		<div id="gameover" style="display:block;position:fixed;z-index:99; bottom:20px; left:0px; font-size:20px; width:100%; text-align:center;">
+			<a href="../index.html" style="padding: 8px 20px;background-color: rgb(255, 18, 163);border-radius: 5px;text-decoration: none;color:white;" >返回Wiki</a>
+		</div>
+		<div>
+			<canvas id="canvas" width="640" height="960" style="width: 332px; height: 498px;"></canvas>
+		</div>
+	</body>
+</html>
