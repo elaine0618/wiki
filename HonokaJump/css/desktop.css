@@ -1,0 +1,11 @@
+/*整体画布设置*/
+#viewport{
+	width: 320px;
+	height: 460px;
+	border: 1px solid white;
+	box-shadow: 5px 5px black;
+}
+
+body{
+	background-color: #EDE1D3;
+}

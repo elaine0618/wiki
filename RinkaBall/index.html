@@ -1,0 +1,31 @@
+<html>
+  <head>
+	<meta name="apple-mobile-web-app-capable" content="yes" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="chrome=1, IE=edge">
+	<title>果果凛个蒜</title>
+	<script type="text/javascript" src="./js/game.js"></script>
+	<script type="text/javascript">
+		Clay = {};
+		Clay.gameKey = "slime";
+		Clay.readyFunctions = [];
+		Clay.ready = function( fn ) {
+			Clay.readyFunctions.push( fn );
+		};
+	</script>
+	<link rel="stylesheet" href="./css/game.css" />
+  </head>
+  <body>
+  	<div id='please-rotate'>
+  		<div>Please rotate your device to landscape mode.</div>
+  	</div>
+  	<div id='center'>
+		<canvas id="canvas" width="580px" height="468px"></canvas>
+	</div>
+  	<div id='setsume'>
+		<h2>操作说明：</h2>
+		<h3>P1：W A D</h3>
+		<h3>P2：方向键</h3>
+	</div>
+  </body>
+</html>
