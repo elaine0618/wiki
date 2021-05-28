@@ -1,0 +1,20 @@
+body{
+	background-color: #efeeee;
+}
+
+.game{
+	position: absolute;
+	top:50%;
+	left:50%;
+	transform: translate(-50%, -50%);
+	width: fit-content;
+	height:auto;
+}
+
+.gamepd{
+	width: 770px; 
+	height: 430px;
+	opacity: 1; 
+	pointer-events: auto;
+	margin-left: auto;
+}
